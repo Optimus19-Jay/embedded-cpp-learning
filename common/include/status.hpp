@@ -1,0 +1,17 @@
+#ifndef STATUS_HPP
+#define STATUS_HPP
+
+#include <cstdint>
+
+enum class Status : std::uint32_t {
+  STATUS_OK = 0,
+  STATUS_NULL_POINTER,
+  STATUS_BUFFER_TOO_SMALL,
+  STATUS_BUFFER_FULL,
+  STATUS_BUFFER_EMPTY,
+  STATUS_INVALID_ARGUMENT,
+  STATUS_NO_DATA,
+  STATUS_ERROR
+};
+
+#endif
