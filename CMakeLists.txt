@@ -12,3 +12,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(CTest)
 
 add_subdirectory(week01_cpp_fundamentals/day01)
+add_subdirectory(week01_cpp_fundamentals/day02)

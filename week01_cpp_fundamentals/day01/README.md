@@ -131,10 +131,16 @@ cmake --build build
 ./build/week01_cpp_fundamentals/day01/firmware_config_demo
 ```
 
-### Run unit tests
+### Run all unit tests
 
 ```bash
 ctest --test-dir build --output-on-failure
+```
+
+### Run day01 unit tests
+
+```bash
+ctest --test-dir build -R "^FirmwareConfigTest" --output-on-failure
 ```
 
 ## Unit Testing
