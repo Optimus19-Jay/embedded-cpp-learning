@@ -13,3 +13,4 @@ include(CTest)
 
 add_subdirectory(week01_cpp_fundamentals/day01)
 add_subdirectory(week01_cpp_fundamentals/day02)
+add_subdirectory(week01_cpp_fundamentals/day03)
