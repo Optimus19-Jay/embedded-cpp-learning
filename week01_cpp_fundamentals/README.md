@@ -21,6 +21,8 @@ By the end of this week, the objectives are to:
 - Build projects using CMake and Ninja.
 - Write unit tests using GoogleTest.
 - Use compiler warnings and sanitizers for validation.
+- Work with C-style arrays and `std::array` for fixed-size data storage.
+- Implement safe array indexing and fixed-size buffer operations.
 
 ## Lessons
 
@@ -28,7 +30,7 @@ By the end of this week, the objectives are to:
 |---|---|---|
 | Day 01 | Firmware Configuration Management | Completed |
 | Day 02 | Pointers, References and Pointer Safety | Completed |
-| Day 03 | To be defined | Not started |
+| Day 03 | Arrays and Fixed-Size Sensor Buffers | Completed |
 | Day 04 | To be defined | Not started |
 | Day 05 | To be defined | Not started |
 
@@ -44,6 +46,13 @@ By the end of this week, the objectives are to:
 - Pointers, addresses, and dereferencing.
 - `nullptr` and null-pointer validation.
 - Local constants using `constexpr`.
+- C-style arrays and `std::array`.
+- Fixed-size storage and compile-time capacity.
+- Zero-based array indexing.
+- Array size and bounds validation.
+- Passing arrays and structures by reference and constant reference.
+- Output reference parameters.
+- Buffer capacity and boundary checks.
 
 ### Project Organization
 
@@ -63,6 +72,10 @@ By the end of this week, the objectives are to:
 - Pointer safety testing.
 - Running tests through CTest.
 - Compiler warnings and sanitizer builds.
+- Testing fixed-size sensor buffers.
+- Testing buffer-full conditions.
+- Testing valid, unpopulated, and out-of-capacity indexes.
+- Verifying output parameters remain unchanged after failed operations.
 
 ## Development Environment
 
@@ -76,13 +89,16 @@ The development environment and tool versions are documented in the root README.
 | Day 01 unit tests | 9 passed |
 | Day 02 implementation | Completed |
 | Day 02 unit tests | 2 passed |
+| Day 03 implementation | Completed |
+| Day 03 unit tests | 7 passed |
 | Normal build | Successful |
-| Total registered tests | 11 passed |
+| Total registered tests | 18 passed |
+| ASan and UBSan validation | Successful |
 
-Sanitizer validation is part of the ongoing development workflow.
+AddressSanitizer (ASan) and UndefinedBehaviorSanitizer (UBSan) validation was completed successfully for all 18 registered tests.
 
 Progress is tracked through the individual lesson directories. Each lesson has its own README documenting its requirements, implementation, architecture, and test coverage.
 
 ## Next Steps
 
-Continue with Day 03 after completing the Day 02 sanitizer validation, documentation review, and Git workflow.
+Continue with Day 04 after completing the Day 03 documentation review and Git workflow.
